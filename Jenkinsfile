@@ -1,6 +1,5 @@
 node {
   //  agent any
-    stages {
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -19,5 +18,4 @@ node {
                 echo "${mvnHome}"
             }
         }
-    }
 }
