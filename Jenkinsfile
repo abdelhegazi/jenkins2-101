@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
 	    steps {	
                 echo 'Testing ...'
-		def mvnHome = tool('M3')
+//		def mvnHome = tool 'M3'
 //		/bin/bash "${mvnHome}/bin/mvn -B verify"
             }
 	}
