@@ -6,15 +6,15 @@ pipeline {
 
         stage('Build') {
 	   steps {
-                echo 'Building..'
+                echo 'Building ...'
 		git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
            }
 	} 
 
         stage('Test') {
 	    steps {	
-                echo 'Testing..'
-//		def mvnHome = tool 'M3'
+                echo 'Testing ...'
+		def mvnHome = tool('M3')
 //		/bin/bash "${mvnHome}/bin/mvn -B verify"
             }
 	}
