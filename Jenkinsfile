@@ -18,6 +18,12 @@ pipeline {
 //		/bin/bash "${mvnHome}/bin/mvn -B verify"
             }
 	}
+	
+	stage('Integration Test') {
+		steps {
+			echo "integration test"
+		}
+	}
 
 	stage('Static Analysis') {
 		steps {
