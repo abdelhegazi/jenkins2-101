@@ -24,6 +24,7 @@ pipeline {
 			echo "integration test"
 		}
 	}
+
 	stage('Static Analysis') {
 		steps {
 			echo 'Static Analysis'
