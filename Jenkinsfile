@@ -19,6 +19,12 @@ pipeline {
             }
 	}
 
+	stage('Static Analysis') {
+		steps {
+			echo 'Static Analysis'
+		}
+	}
+
         stage('Deploy') {
 	    steps {
 //                echo "${mvnHome}"
